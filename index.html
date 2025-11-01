@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>万圣节礼物</title>
+  <!-- 引入字体（和原代码一致） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- 关联CSS样式文件 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 初始弹窗（和原代码一致） -->
+    <div class="modal-backdrop" id="start-backdrop" aria-hidden="false">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="titlebar">
+          <span class="icon">🎃</span>
+          <span class="title" id="modal-title">万圣节礼物</span>
+        </div>
+        <div class="content">您有一份万圣节礼物，确定要打开吗？</div>
+        <div class="actions">
+          <button class="btn primary" id="confirm-btn" autofocus>确定</button>
+        </div>
+      </div>
+    </div>
+    <!-- 动态弹窗容器 -->
+    <div id="popup-layer" aria-live="polite" aria-atomic="false"></div>
+  </div>
+
+  <!-- 背景音乐（替换为免费可访问的链接，避免失效） -->
+  <audio id="bgMusic" preload="auto">
+    <!-- 推荐用免费音频托管平台的链接，比如： -->
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/31/audio_167390027f.mp3?filename=halloween-ambience-121066.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 关联JS交互文件 -->
+  <script src="app.js"></script>
+</body>
+</html>
